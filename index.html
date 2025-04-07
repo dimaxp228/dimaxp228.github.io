@@ -1,0 +1,269 @@
+<html>
+    <style>
+        html{
+            background: #010101;
+        }
+        .main{
+            background: #010101;
+            width: 900px;
+            height: 560px;display: block;
+            margin: auto;
+            transform: translateY(200px);
+            border-radius: 10px;border: 1px solid #313131;
+        }
+        .text{
+            font-size: 20px;
+            color: #ffffff;
+            font-family: monospace;
+            text-transform: uppercase;
+            font-weight: bold ;
+            text-align: center
+        }
+        .text4{
+            font-size: 20px;
+            color: #ffffff;
+            font-family: monospace;
+            text-transform: uppercase;
+            font-weight: bold ;display: inline;
+            text-shadow: 0px 0px 3px #0857ff;transform: translate(30px-5px);
+        }
+        .text1{
+            font-size: 30px;
+            color: #ffffff;
+            font-family: monospace;
+            text-transform: uppercase;
+            font-weight: bold ;
+            text-align: center;transform: translateY(7px);
+        }
+        .text3{
+            font-size: 40px;
+            color: #ffffff;
+            font-family: monospace;
+            text-transform: uppercase;
+            font-weight: bold ; transform: translateX(30px);
+
+        }
+        .btns{
+            font-size: 20px;
+            color: #ffffff;
+            width: 100%;
+            height: 60px;
+            font-family: monospace;
+
+            text-transform: uppercase;
+            font-weight: bold ;
+            display: block; border-top: none;border-left: none;border-right: none;
+            border-bottom: 1px solid #313131;
+            background: transparent;
+            &:hover{
+                background: #0059ff;
+                color: #ffffff;
+                box-shadow: 0px 0px 50px #0040ff;
+            }
+        }
+        .btns3{
+            font-size: 20px;
+            color: #ffffff;
+            width: 100%;
+            height: 60px;
+            font-family: monospace;
+
+            text-transform: uppercase;
+            font-weight: bold ;
+            display: block; border-top: none;border-left: none;border-right: none;border-bottom: none;
+            background: transparent;
+            &:hover{
+                background: #0059ff;
+                color: #ffffff;
+                box-shadow: 0px 0px 50px #0040ff;
+            }
+        }
+        .btns2{
+            font-size: 20px;
+            color: #ffffff;
+            width: auto;
+            height: 30px;
+            font-family: monospace;
+            
+            text-transform: uppercase;
+            font-weight: bold ;
+            display: inline-block;
+            border: 1px solid #313131;transform: translateX(6px);
+            background: transparent;
+            &:hover{
+                background: #0059ff;
+                color: #ffffff;
+                box-shadow: 0px 0px 50px #0040ff;
+            }
+            
+        }
+        .title{
+
+            width: 100%;border: 1px solid #313131;
+            height: 50px;border-top-left-radius: none;
+            transform: translateY(-17px);
+            border-top-right-radius: none;
+            border-top: none;border-left: none;border-right: none;
+        }
+        .leftpanel{
+            background: transparent;
+            width: auto;
+            height: 90%;
+            float: left;border: 1px solid #313131;
+            border-top: none;border-left: none;transform: translateY(-17px);
+            border-bottom: none;
+        }
+        .content{
+            display: none;
+        }
+        .ball{
+            width: 32px;
+            height: 32px;display: inline-block;
+            transform: translateX(220px);
+            background: #0059ff;transition: .1s;
+            overflow: hidden;position: ab;
+            
+        }
+    </style>
+    <audio id="audioBuffer"></audio>
+    <div class="main">
+    <div class="title"><h1 class="text1">САЙТ ПОСРЕДНИК</h1></div>
+   
+    <div class="leftpanel">
+        <h1 class="text">Разделы сайта</h1>
+        <button class="btns" id="bv0">Главная</button>
+        <button class="btns" id="bv1">Сборки Виндовс</button>
+        <button class="btns" id="bv2">слоник тв</button>
+        <button class="btns" id="bv3">статьи</button>
+        <button class="btns" id="bv4">схемы рэа</button>
+        <button class="btns" id="bv5">ПО</button>
+        <button class="btns3"id="bv6">HCPP STUDIO</button>
+        <p class="text">PXEngine_JS 1.232fa11ssa2.</p>
+    </div>
+    <div class="rightpanel">
+    <div class="content" id="mainframe">
+        <p class="text">Добро пожаловать на сайт !!</p>
+    <p class="text">это сайт посредник для сайта dimaxp.sytes.net</p>
+    <p class="text">Здесь есть все разделы сайта </p>
+    <p class="text3">Мои проекты</p>
+    <p class="text4">JoyStickTest 1.1_OpenGL3.3 (SSE4.2_x64)</p><button class="btns2" onclick="PX.addLink(AppBuffer[0]);">скачать</button>
+    <br>
+    <p class="text4">Калькулятор Электроника (x86_64) 1.0.3.</p><button class="btns2"onclick="PX.addLink(AppBuffer[1]);">скачать</button>
+    <br>
+    <p class="text4">SYSTEM-Z 1.0 OpenGL3.3 (x64).......... </p><button class="btns2"onclick="PX.addLink(AppBuffer[2]);">скачать</button>
+    <br>
+    <p class="text4">CNotepad 1.0 OpenGL3 (x64).............</p><button class="btns2"onclick="PX.addLink(AppBuffer[3]);">скачать</button>
+    <br>
+    <p class="text4">Калькулятор электроника (DIMA XP) 2.1..</p><button class="btns2"onclick="PX.addLink(AppBuffer[4]);">скачать</button>
+    <br>
+    </div>
+    <div class="content2" id="loading">
+    <p class="text1">Переадресация..</p>
+      <div class="ball" id="bl0"></div> <div class="ball"  id="bl1"></div> <div class="ball"  id="bl2"></div> <div class="ball"  id="bl3"></div>
+    </div>
+    </div>
+    </div>
+    <script src="pxengine_1.0.js"></script>
+    <script src="module_pxAudio.js"></script>
+    <script>
+        //
+        document.body.click();
+        let fW_loadingWindow = document.getElementById("loading");
+        let fW_mainWindow = document.getElementById("mainframe");
+        //
+        let fBNav0 = document.getElementById("bv0");
+        let fBNav1 = document.getElementById("bv1");
+        let fBNav2 = document.getElementById("bv2");
+        let fBNav3 = document.getElementById("bv3");
+        let fBNav4 = document.getElementById("bv4");
+        let fBNav5 = document.getElementById("bv5");
+        let fBNav6 = document.getElementById("bv6");
+        //
+        let AppBuffer = [
+        "https://github.com/HCPP20334/JoyStickTest/releases/download/JoyStickTest_x64_OpenGL_1.1/JoyStickTest_x64_OpenGL3SSE4.2.zip",//0
+        "https://github.com/HCPP20334/Calc-for-Electronic/releases/download/Electric_calc_release/Electrik.Calc.1.0.3.x86_64.zip",//1
+        "https://github.com/HCPP20334/SYSTEM-Z/releases/download/System_Z_1.0/SYSTEM-Z.zip",
+        "https://github.com/HCPP20334/CNotepad_0.1-x64-OpenGL3.3-/releases/download/0.2/CNotepadRelease.zip",
+        "http://dimaxp.sytes.net/filedmx/Setup%20Electrick%20Calc%20V2.1%20BY%20DIMA%20XP%20(Setup).exe"
+    ];
+        let domains_url = [
+          "http://dimaxp.sytes.net/",//0
+          "http://dimaxp.sytes.net/po/",//1
+          "http://dimaxp.sytes.net/sborki-windows-i-dr/",//2
+          "http://dimaxp.sytes.net/skhemy-rea-sssr/",//3
+          "http://dimaxp.sytes.net/stati/",//4
+          "http://dimaxp.sytes.net/SlonikTV-BY-HCPP.html ",//5
+          "https://hcpp20334.github.io"//6
+        ];
+        //
+        let PX = new PXEngine();
+        PX.init();
+        // switchers
+        PX.frame(fW_loadingWindow,0)
+        PX.frame(fW_mainWindow,1);
+        //
+        let PXA = new pxAudio();
+        let audioDevice = document.getElementById("audioBuffer");
+        PXA.initAudio(audioDevice);
+        PXA.pxLoadFile("смыв.mp3");
+        PXA.AudioLoad();
+        let AnimationHandle;
+        AnimationHandle = setInterval(function(){
+            PX.animload();
+        },100)
+        //
+        function AnimLoad(id){
+            PX.frame(fW_loadingWindow,1)
+            PX.frame(fW_mainWindow,0);
+            setTimeout(function(){
+                PX.addLink(domains_url[id]);
+                PX.frame(fW_loadingWindow,0)
+            PX.frame(fW_mainWindow,1);
+            },1000);
+        }
+        //
+        fBNav0.onclick = function(){
+            AnimLoad(0);PXA.pxPlay();
+        }
+        fBNav1.onclick = function(){
+            AnimLoad(2);PXA.pxPlay();
+        }
+        fBNav2.onclick = function(){
+            AnimLoad(5);PXA.pxPlay();
+        }
+        fBNav3.onclick = function(){
+            AnimLoad(4);PXA.pxPlay();
+        }
+        fBNav4.onclick = function(){
+            AnimLoad(3);PXA.pxPlay();
+        }
+        fBNav5.onclick = function(){
+            AnimLoad(1);PXA.pxPlay();
+        }
+        fBNav6.onclick = function(){
+            AnimLoad(6);PXA.pxPlay();
+        }
+        //
+        fBNav0.onmouseover = function(){
+            PXA.pxPlay();
+        }
+        fBNav1.onmouseover = function(){
+            PXA.pxPlay();
+        }
+        fBNav2.onmouseover = function(){
+            PXA.pxPlay();
+        }
+        fBNav3.onmouseover = function(){
+            PXA.pxPlay();
+        }
+        fBNav4.onmouseover = function(){
+            PXA.pxPlay();
+        }
+        fBNav5.onmouseover = function(){
+            PXA.pxPlay();
+        }
+        fBNav6.onmouseover = function(){
+            PXA.pxPlay();
+        }
+    </script>
+</html>
